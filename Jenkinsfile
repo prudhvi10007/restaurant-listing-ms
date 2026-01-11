@@ -8,12 +8,12 @@ pipeline {
   }
 
   tools {
-    maven "Maven"
+    maven "maven"
   }
 
   stages {
 
-    stage('Maven Build'){
+    stage('maven Build'){
         steps{
         sh 'mvn clean package  -DskipTests'
         }
